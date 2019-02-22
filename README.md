@@ -12,7 +12,33 @@
 `[验证URL有效性]`
 > 在获取请求时需要做Urldecode处理(<font color="red"><strong>GET</strong></font>)，否则可能会验证不成功<br>
 
-假设接收消息地址设置为：<font color="red">http://api.3dept.com/</font>，企业微信将向该地址发送如下验证请求：<br>
+假设接收地址设置为：<font color="red">http://api.3dept.com/</font>，将向该地址发送如下验证请求：<br>
 <strong>请求方式：GET</strong><br>
 <strong>请求地址：</strong>http://api.3dept.com/?msg_signature=DFASDS&timestamp=1234&nonce=123412323&echostr=ENCRYPT_STR<br>
+<table><thead><tr><th>参数</th><th>必须</th><th>说明</th></tr></thead>
+<tbody>
+<tr>
+<td>msg_signature</td>
+<td>是</td>
+<td>企业微信加密签名，msg_signature结合了企业填写的token、请求中的timestamp、nonce参数、加密的消息体</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>是</td>
+<td>时间戳</td>
+</tr>
+<tr>
+<td>nonce</td>
+<td>是</td>
+<td>随机数</td>
+</tr>
+<tr>
+<td>echostr</td>
+<td>是</td>
+<td>加密的字符串。需要<a href="#12976/密文解密得到msg的过程">解密得到消息内容明文</a>，解密后有random、msg_len、msg、receiveid四个字段，其中msg即为消息内容明文</td>
+</tr>
+</tbody>
+</table>
+
+
 
