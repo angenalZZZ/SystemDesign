@@ -14,5 +14,5 @@
 
 假设接收消息地址设置为：<font color="red">http://api.3dept.com/</font>，企业微信将向该地址发送如下验证请求：<br>
 <strong>请求方式：GET</strong><br>
-<strong>请求地址：</strong>http://api.3dept.com/?msg_signature=ASDFQWEXZCVAQFASDFASDFSS&timestamp=13500001234&nonce=123412323&echostr=ENCRYPT_STR<br>
+<strong>请求地址：</strong>http://api.3dept.com/?msg_signature=DFASDS&timestamp=1234&nonce=123412323&echostr=ENCRYPT_STR<br>
 
