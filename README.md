@@ -10,6 +10,7 @@
     若干子系统，进行子系统和总系统的详细设计并进行评价，对系统方案进行论证并作出性能效果预测。
 
 `[验证URL有效性]`
+---
 > 在获取请求时需要做Urldecode处理(<font color="red"><strong>GET</strong></font>)，否则可能会验证不成功<br>
 
 假设接收地址设置为：<font color="red">http://api.3dept.com/</font>，将向该地址发送如下验证请求：<br>
@@ -38,6 +39,6 @@
 <td>加密的字符串。需要[解密得到消息内容明文](#密文解密得到msg的过程)，解密后有random、msg_len、msg、receiveid四个字段，其中msg即为消息内容明文</td>
 </tr>
 </tbody></table>
-
+---
 
 
