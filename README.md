@@ -52,8 +52,8 @@
 * 举例说明
     *  假设在服务商管理端为某个套件有如下配置参数
         > corpId = "wx5823bf96d3bd56c7"
-        > token = "QDG6eK"
-        > encodingAesKey = "jWmYm7qr5nMoAUwZRjGtBxmz3KA1tkAj3ykkR6q2B2C"
+          token = "QDG6eK"
+          encodingAesKey = "jWmYm7qr5nMoAUwZRjGtBxmz3KA1tkAj3ykkR6q2B2C"
     *  收到来自服务商管理端的回调为：
 ~~~
 POST /cgi-bin/wxpush?msg_signature=477715d11cdb4164915debcba66cb864d751f3e6&timestamp=1409659813&nonce=1372623149 HTTP/1.1
