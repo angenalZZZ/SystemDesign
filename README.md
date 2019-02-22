@@ -50,7 +50,7 @@
     *  去掉`rand_msg`头部的`16`个随机字节和`4`个字节`msg_len`，截取`msg_len`长度部分为`msg`，剩下的为尾部`receiveid`
     *  验证解密后的`receiveid`、`msg_len`。注意，`receiveid`在不同场景含义不同。
 * 举例说明：
-        假设在服务商管理端为某个套件有如下配置参数
+    假设在服务商管理端为某个套件有如下配置参数
 ~~~
 corpId = "wx5823bf96d3bd56c7"
 token = "QDG6eK"
