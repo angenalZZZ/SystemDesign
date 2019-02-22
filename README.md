@@ -64,7 +64,7 @@
 &lt;AgentID&gt;&lt;![CDATA[218]]&gt;&lt;/AgentID&gt;<br>
 &lt;/xml&gt;
     *  第一步：准备相关参数
-~~~
+        > ~~~
 AESKey = Base64_Decode(EncodingAESKey + "=")
 signature = "477715d11cdb4164915debcba66cb864d751f3e6";
 timestamps = "1409659813";
