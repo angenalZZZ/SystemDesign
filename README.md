@@ -15,7 +15,7 @@
     在获取请求时需要做Urldecode处理，否则可能会验证不成功
     假设接收地址设置为：http://api.3dept.com/，将向该地址发送如下验证请求：
 <strong>请求方式：GET</strong><br>
-<strong>请求地址：</strong>http://api.3dept.com/?msg_signature=DFASDS&timestamp=1234&nonce=123412323&echostr=ENCRYPT_STR<br>
+<strong>请求地址：</strong>http://api.3dept.com/?msg_signature=DFA8457SDS&timestamp=1234&nonce=123412323&echostr=ENCRYPT_STR<br>
 <table><thead><tr><th>参数</th><th>*</th><th>说明</th></tr></thead>
 <tbody>
 <tr>
