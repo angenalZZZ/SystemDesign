@@ -12,7 +12,7 @@
 `[验证URL有效性]`
 > 在获取请求时需要做Urldecode处理(<font color="red"><strong>GET</strong></font>)，否则可能会验证不成功<br>
 
-假设接收消息地址设置为：http://api.3dept.com/，企业微信将向该地址发送如下验证请求：<br>
-<strong>请求方式：GET<strong><br>
-<strong>请求地址：<strong>http://api.3dept.com/?msg_signature=ASDFQWEXZCVAQFASDFASDFSS&timestamp=13500001234&nonce=123412323&echostr=ENCRYPT_STR<br>
+假设接收消息地址设置为：<font color="red">http://api.3dept.com/</font>，企业微信将向该地址发送如下验证请求：<br>
+<strong>请求方式：GET</strong><br>
+<strong>请求地址：</strong>http://api.3dept.com/?msg_signature=ASDFQWEXZCVAQFASDFASDFSS&timestamp=13500001234&nonce=123412323&echostr=ENCRYPT_STR<br>
 
