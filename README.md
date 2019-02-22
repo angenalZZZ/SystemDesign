@@ -15,7 +15,7 @@
 假设接收地址设置为：<font color="red">http://api.3dept.com/</font>，将向该地址发送如下验证请求：<br>
 <strong>请求方式：GET</strong><br>
 <strong>请求地址：</strong>http://api.3dept.com/?msg_signature=DFASDS&timestamp=1234&nonce=123412323&echostr=ENCRYPT_STR<br>
-<table><thead><tr><th>参数</th><th>必须</th><th>说明</th></tr></thead>
+<table><thead><tr><th>参数</th><th>*</th><th>说明</th></tr></thead>
 <tbody>
 <tr>
 <td>msg_signature</td>
@@ -35,10 +35,9 @@
 <tr>
 <td>echostr</td>
 <td>是</td>
-<td>加密的字符串。需要<a href="#12976/密文解密得到msg的过程">解密得到消息内容明文</a>，解密后有random、msg_len、msg、receiveid四个字段，其中msg即为消息内容明文</td>
+<td>加密的字符串。需要[解密得到消息内容明文](#密文解密得到msg的过程)，解密后有random、msg_len、msg、receiveid四个字段，其中msg即为消息内容明文</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 
 
 
