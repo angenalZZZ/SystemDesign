@@ -95,7 +95,28 @@ signature = sha1(sort_str) = "477715d11cdb4164915debcba66cb864d751f3e6"
 ~~~
 aes_msg = base64_decode(msg_encrypt)
 ~~~
+*  使用AESKey做AES解密（注意，不是EncodingAESKey）
+~~~
+rand_msg = aes_decrypt(aes_msg, AESKey)
+~~~
+*  去掉rand_msg头部的16个随机字节和4个字节的msg_len，截取msg_len长度的部分即为msg，剩下的为尾部的receiveid
+~~~python
+content = rand_msg[16:]  # 去掉前16随机字节
+msg_len = str_to_uint(content[0:4]) # 取出4字节的msg_len
+msg = content[4:msg_len+4] # 截取msg_len 长度的msg
+receiveid = content[xml_len+4:] = "wx5823bf96d3bd56c7" # 剩余字节为receiveid
+~~~
+*  解密后得到明文为：
+~~~xml
+<xml>
+   <ToUserName><![CDATA[wx5823bf96d3bd56c7]]></ToUserName>
+   <FromUserName><![CDATA[mycreate]]></FromUserName>
+   <CreateTime>1409659813</CreateTime>
+   <MsgType><![CDATA[text]]></MsgType>
+   <Content><![CDATA[hello]]></Content>
+   <MsgId>4561255354251345929</MsgId>
+   <AgentID>218</AgentID>
+</xml>
+~~~
 
-
-
-
+----
