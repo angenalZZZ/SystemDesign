@@ -38,7 +38,9 @@
 <td>加密字符串需要解密得到消息内容明文，解密后有random、msg_len、msg、receiveid字段，其中msg即为消息内容明文</td>
 </tr>
 </tbody></table>
-    
+
+----
+
 `解密得到消息内容明文`
 ---
 * 解密得到msg的过程
@@ -118,6 +120,7 @@ receiveid = content[xml_len+4:] = "wx5823bf96d3bd56c7" # 剩余字节为receivei
 </xml>
 ~~~
 
+----
 
 `访问频率限制`
 ---
