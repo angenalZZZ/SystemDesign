@@ -36,7 +36,7 @@
 <tr>
 <td>echostr</td>
 <td>是</td>
-<td>加密的字符串。需要[解密得到消息内容明文](#密文解密得到msg的过程)，解密后有random、msg_len、msg、receiveid四个字段，其中msg即为消息内容明文</td>
+<td>加密的字符串。需要解密得到消息内容明文，解密后有random、msg_len、msg、receiveid四个字段，其中msg即为消息内容明文</td>
 </tr>
 </tbody></table>
 
